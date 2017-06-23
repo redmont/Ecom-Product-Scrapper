@@ -1,0 +1,1738 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dat",
+				"data2"
+			],
+			[
+				"que",
+				"queue_data"
+			],
+			[
+				"em",
+				"emailing_address"
+			],
+			[
+				"au",
+				"automation_address"
+			],
+			[
+				"upda",
+				"update_query"
+			],
+			[
+				"up",
+				"update_query"
+			],
+			[
+				"ma",
+				"marketing_automation_enabled"
+			],
+			[
+				"db",
+				"db_name"
+			],
+			[
+				"add",
+				"addClass\t.addClass()"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"par",
+				"params"
+			],
+			[
+				"tra",
+				"traffic_check"
+			],
+			[
+				"da",
+				"datetime"
+			],
+			[
+				"he",
+				"headers"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"cli",
+				"client_id"
+			],
+			[
+				"coo",
+				"cookie"
+			],
+			[
+				"find",
+				"findandmodify"
+			],
+			[
+				"client",
+				"client_details"
+			],
+			[
+				"Contact",
+				"contact_details"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"pars",
+				"parseInt"
+			],
+			[
+				"sce",
+				"scenario_name"
+			],
+			[
+				"email",
+				"email"
+			],
+			[
+				"reques",
+				"request_data"
+			],
+			[
+				"req",
+				"request_data"
+			],
+			[
+				"err",
+				"err"
+			],
+			[
+				"ret",
+				"returnError"
+			],
+			[
+				"use",
+				"user"
+			],
+			[
+				"ema",
+				"email_id"
+			],
+			[
+				"cuid",
+				"cuid"
+			],
+			[
+				"emai",
+				"email_id"
+			],
+			[
+				"ma_",
+				"ma_db_host"
+			],
+			[
+				"He",
+				"Helper"
+			],
+			[
+				"ad",
+				"adroll_send_iframe"
+			],
+			[
+				"JS",
+				"jsonToQueryString"
+			],
+			[
+				"if",
+				"if_url"
+			],
+			[
+				"json",
+				"json"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"clien",
+				"client"
+			],
+			[
+				"dele",
+				"delete"
+			],
+			[
+				"del",
+				"delete"
+			],
+			[
+				"co",
+				"colors"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"cal",
+				"callbackPreProcess"
+			],
+			[
+				"cont",
+				"contact"
+			],
+			[
+				"js",
+				"json"
+			],
+			[
+				"dec",
+				"decryptCampMail"
+			],
+			[
+				"Hel",
+				"Helpers"
+			],
+			[
+				"en",
+				"encrypted_id"
+			],
+			[
+				"Help",
+				"helpers"
+			],
+			[
+				"sib",
+				"sib_uuid"
+			],
+			[
+				"sess",
+				"session_id"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"pa",
+				"params"
+			],
+			[
+				"k",
+				"key"
+			],
+			[
+				"adro",
+				"adroll_enabled"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"scr",
+				"script"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/process_scripts/process_tracker.js",
+			"settings":
+			{
+				"buffer_size": 7090,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/models/Log.js",
+			"settings":
+			{
+				"buffer_size": 20548,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 1345 files for \"inserInDbQueue\" (regex)\n\n/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/RuleEngine.js:\n 1599      },\n 1600  \n 1601:     inserInDbQueue: function(reqs, req, db_url, email_id, queue_data, current_step_id, uuid) {\n 1602          reqs.log_uid = req.log_uid || reqs.log_uid;\n 1603          queue_data.rand_id = Math.floor((Math.random() * 99) + 1);\n\n/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/appFunctions.js:\n  462                      if (process_data) {\n  463                          if (process_data.data && process_data.data.status == 'in_process') {\n  464:                             RuleEngine.inserInDbQueue(request_data, request_data, request_data.pre_data.host, request_data.pre_data.db, request_data.pre_data.email, request_data.pre_data, null, request_data.log_uid);\n  465                              request_data.pre_data.process_id = request_data.process_id;\n  466                              Utility.send_alert_mail(JSON.stringify(request_data.pre_data), 2);\n\n2 matches across 2 files\n\n\nSearching 1345 files for \"pre_data.host\" (regex)\n\n/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/appFunctions.js:\n  462                      if (process_data) {\n  463                          if (process_data.data && process_data.data.status == 'in_process') {\n  464:                             RuleEngine.inserInDbQueue(request_data, request_data, request_data.pre_data.host+request_data.pre_data.db, request_data.pre_data.email, request_data.pre_data, null);\n  465                              request_data.pre_data.process_id = request_data.process_id;\n  466                              Utility.send_alert_mail(JSON.stringify(request_data.pre_data), 2);\n\n1 match in 1 file\n\n\nSearching 1345 files for \"pre_data\" (regex)\n\n/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/RuleEngine.js:\n 1559                      queue_data.process_id = extra_data.process_id;\n 1560                      queue_data.sid = req.sid;\n 1561:                     queue_data.pre_data = req;\n 1562:                     queue_data.pre_data.subtype = \"no_requeue\";\n 1563                      queue_data.retry = parseInt(1);\n 1564                  }\n\n/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/appFunctions.js:\n  462                      if (process_data) {\n  463                          if (process_data.data && process_data.data.status == 'in_process') {\n  464:                             RuleEngine.inserInDbQueue(request_data, request_data, request_data.pre_data.host+request_data.pre_data.db, request_data.pre_data.email, request_data.pre_data, null);\n  465:                             request_data.pre_data.process_id = request_data.process_id;\n  466:                             Utility.send_alert_mail(JSON.stringify(request_data.pre_data), 2);\n  467                          } else {\n  468                              console.log(request_data.log_uid, \"get process is not in process status=>\", process_data.data.status);\n\n8 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 3118,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/RuleEngine.js",
+			"settings":
+			{
+				"buffer_size": 96458,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/appFunctions.js",
+			"settings":
+			{
+				"buffer_size": 26544,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/process_cookie.js",
+			"settings":
+			{
+				"buffer_size": 9627,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/RabbitHandler.js",
+			"settings":
+			{
+				"buffer_size": 6943,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/Utility.js",
+			"settings":
+			{
+				"buffer_size": 5027,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/cm.js",
+			"settings":
+			{
+				"buffer_size": 7388,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/helpers.js",
+			"settings":
+			{
+				"buffer_size": 10730,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/db.js",
+			"settings":
+			{
+				"buffer_size": 5061,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/dnshu.js",
+			"settings":
+			{
+				"buffer_size": 302,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/api/controllers/ScenariosController.js",
+			"settings":
+			{
+				"buffer_size": 70833,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/api/services/Utility.js",
+			"settings":
+			{
+				"buffer_size": 57859,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/logcontroller.js",
+			"settings":
+			{
+				"buffer_size": 55308,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 180.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/var/www/html/forked/Marsplay"
+	],
+	"file_history":
+	[
+		"/var/www/html/forked/Marsplay/api/models/User.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/ScenarioActions.js",
+		"/var/www/html/forked/sib_marketing_automation/api/models/MaUsers.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/tracking_scripts/automation.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/tracking_scripts/new_automation.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/dnshu.js",
+		"/var/www/html/forked/sib_marketing_automation/node_modules/.bin/eslint",
+		"/var/www/html/forked/sib_marketing_automation/.eslintrc.js",
+		"/var/www/html/forked/sib_marketing_automation/api/models/MaUsers.js.BACKUP.2871.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/ScenarioFunctions.js",
+		"/var/www/html/forked/sib_marketing_automation/api/models/Urlevents.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/models/Log.js",
+		"/var/www/html/forked/sib_marketing_automation/app.js",
+		"/var/www/html/forked/sib_marketing_automation/csvp.js",
+		"/home/deepanshu/.config/sublime-text-3/Packages/ESLintAutoFix/ESLintAutoFix.sublime-settings",
+		"/home/deepanshu/.config/sublime-text-3/Packages/User/ESLintAutoFix.sublime-settings",
+		"/var/www/html/forked/sib_marketing_automation/api/policies/userAuthentication.js",
+		"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/process_adroll_segment.js",
+		"/var/www/html/forked/sib_marketing_automation/custom_modules/adroll.js",
+		"/var/www/html/forked/sib_marketing_automation/api/controllers/LogController.js",
+		"/var/www/html/forked/sib_marketing_automation/api/models/ScenarioStats.js",
+		"/var/www/html/forked/sib_marketing_automation/api/models/Scenarios.js",
+		"/var/www/html/forked/sib_marketing_automation/api/models/Users.js",
+		"/var/www/html/forked/sib_marketing_automation/api/services/Utility.js",
+		"/var/www/html/forked/sib_marketing_automation/api/controllers/ScenariosController.js",
+		"/var/www/html/forked/sib_marketing_automation/api/controllers/WebController.js",
+		"/var/www/html/forked/sib_marketing_automation/api/models/Log.js",
+		"/var/www/html/forked/sib_marketing_automation/api/models/Config.js",
+		"/var/www/html/forked/sib_marketing_automation/api/models/Properties.js",
+		"/var/www/html/forked/sib_marketing_automation/views/log/realtimelogs.ejs",
+		"/var/www/html/forked/sib_marketing_automation/node-app-formatted.log",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/mi",
+		"/var/www/html/forked/sib_marketing_automation/.travis.yml",
+		"/var/www/html/forked/sib_marketing_automation/api/models/Queue.js",
+		"/var/www/html/forked/sib_marketing_automation/api/models/Premade.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/ma_tracker_process.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/logcontroller.js",
+		"/var/www/html/forked/sib_marketing_automation/api/controllers/DefaultController.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/process_tracker.js",
+		"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/helpers.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/authenticate.js",
+		"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/package.json",
+		"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/config/staging.js",
+		"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/cm.js",
+		"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/config/development.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/models/MaUsers.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/models/Config.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/processQueueAutoLoad.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/process_queue.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/appFunctions.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/process_events.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/models/Properties.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/models/Users.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/tracking_scripts/cm.html",
+		"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/process_cookie.js",
+		"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/db.js",
+		"/var/www/html/forked/index.html",
+		"/var/www/html/forked/RESTAPI/RESTAPI/README.md",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/RuleEngine.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/process_wait.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/Utility.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/node_modules/ScenarioActions.js.orig",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/process_stats.js",
+		"/var/www/html/forked/sib_marketing_automation/config/routes.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/tracking_scripts/snippet.js",
+		"/var/www/html/forked/sib_marketing_automation/api/controllers/adrollMAController.js",
+		"/var/www/html/forked/sib_marketing_automation/views/layout.ejs",
+		"/var/www/html/forked/sib_marketing_automation/views/parameters/index.ejs",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/src/sib_common.js",
+		"/var/www/html/forked/sib_marketing_automation/sachin.js",
+		"/var/www/html/forked/sib_marketing_automation/socket2.js",
+		"/var/www/html/forked/sib_marketing_automation/sockettest.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/src/dashboard.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/src/angular/WebSocketService.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/ma_socket_io.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/config.js",
+		"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/config/production.js",
+		"/var/www/html/forked/sib_marketing_automation/views/home/index.ejs",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/mailin.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/node_modules/logcontroller.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/json_process.js",
+		"/var/www/html/forked/sib_marketing_automation/tailable.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/ma_event_process.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/favicon.ico",
+		"/var/www/html/forked/sib_marketing_automation/config/db.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/config/local.js",
+		"/home/deepanshu/Downloads/Cloudflare.postman_collection.json",
+		"/var/www/html/forked/cm.html",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/tracking_scripts/cookie.html",
+		"/var/www/html/forked/sib_marketing_automation/custom_modules/mailin.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/src/sib_plumb_wrapper.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/robots.txt",
+		"/var/www/html/forked/sib_marketing_automation/api/controllers/.gitkeep",
+		"/var/www/html/forked/yyy/index.html",
+		"/var/www/html/forked/yyy/files_xxx/t.css",
+		"/home/deepanshu/Downloads/mobile facebook phishing/hack.php",
+		"/home/deepanshu/Downloads/Welcome to Facebook.html",
+		"/home/deepanshu/Downloads/yyy/files_xxx/t.css",
+		"/home/deepanshu/Downloads/yyy/index.html",
+		"/var/www/html/forked/yyy/tAjzhZUsqvG.css",
+		"/var/www/html/forked/xxx/desktop_files/gNs_8jOawWE.css",
+		"/var/www/html/forked/yyy/files_xxx/B.css",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/src/startpoints_actions.js",
+		"/var/www/html/forked/sib_marketing_automation/node_modules/JSV/jsdoc-toolkit/templates/codeview/css/all.css",
+		"/home/deepanshu/Downloads/mobile facebook phishing/index.htm",
+		"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/Utility.js",
+		"/var/www/html/forked/xxx/mobile.jpg",
+		"/home/deepanshu/Downloads/fb phishing 2017/m_data.php",
+		"/home/deepanshu/Downloads/fb phishing 2017/desktop.jpg",
+		"/home/deepanshu/Downloads/Facebook fake page(Hackingaday)/Pass.php",
+		"/var/www/html/forked/sib_marketing_automation/node-ma-event-process.debug",
+		"/var/www/html/forked/sib_marketing_automation/node-ma-event-process-formatted.log",
+		"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/RabbitHandler.js",
+		"/var/www/html/forked/sib_marketing_automation/node-app.debug",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/models/Urlevents.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/tracking_scripts/drop_test_cookie.html",
+		"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/fallout.js",
+		"/var/www/html/forked/automation.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/tracking_scripts/automation_dev.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/tracking_scripts/automation_staging.js",
+		"/var/www/html/forked/sib_marketing_automation/.tmp/public/js/src/sib_common.js",
+		"/var/www/html/forked/sib_marketing_automation/qq.js",
+		"/var/www/html/forked/sib_marketing_automation/config/env/production.js",
+		"/var/www/html/forked/sib_marketing_automation/assets/js/src/scenario_index.js",
+		"/var/www/html/forked/sib_marketing_automation/config/env/development_custom.js",
+		"/var/www/html/forked/sib_marketing_automation/process_scripts/process_exports.js",
+		"/var/www/html/forked/sib_marketing_automation/bar.js",
+		"/var/www/html/forked/sib_marketing_automation/Gruntfile.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/assets/js/src",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/assets/js/src",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/assets/js/src",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation",
+			"",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts",
+			"/var/www/html/forked/sib_marketing_automation/assets",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts",
+			"/var/www/html/forked/sib_marketing_automation/cooking_matching_scripts",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/assets/js/src",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/assets/js/src",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts,/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts,/var/www/html/forked/sib_marketing_automation/assets",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts,/var/www/html/forked/sib_marketing_automation/assets",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/sib_",
+			"/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes",
+			"/var/www/html/forked/sib_marketing_automation/api",
+			"/var/www/html/forked/sib_marketing_automation/process_scripts",
+			"/var/www/html/forked/sib_marketing_automation/process_scripta",
+			"/var/www/html/forked/sib_marketing_automation/api"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hasNext",
+			"});\n",
+			"hasnex",
+			"session_id",
+			"session",
+			"<<<",
+			"request_data.pre_data",
+			"pre_data",
+			"pre_data.host",
+			"inserInDbQueue",
+			"<<<<",
+			"\n            ",
+			"setUniqueIndex",
+			"setIndex",
+			"SON.parse\\(JS",
+			"SON.parse(JS",
+			";\n",
+			"ata2.params.dnshu_stime;",
+			"data2.params.dnshu_stime;",
+			"delete data2.params.dnshu_stime;",
+			" delete data2.params.dnshu_stime;",
+			" \"params.sib_type\": 'tr",
+			"queue_data.client_id",
+			"\\.bin",
+			"/bin",
+			"\\.bin",
+			"str",
+			"allsets",
+			"client",
+			"userEmail",
+			"newchar",
+			"allsets",
+			"deliveryData",
+			"custom_error",
+			"a",
+			"i",
+			"custom_error",
+			"insert2",
+			"log'",
+			"Log.inse",
+			"'log'",
+			"\\'log\\'\\).fin",
+			"\\'log\\').fin",
+			"workflow",
+			"processBeforeQueue",
+			"insertInQueueu",
+			"insertinque",
+			"_segment",
+			"tsFilter",
+			"escapeRegExp",
+			"getActiveContacts",
+			"clearActiveScenario",
+			"getListByname",
+			"getFormData",
+			"getList",
+			"getTemplate",
+			"getList",
+			"getAttributes",
+			"Users.getAttributes",
+			"Users.getList",
+			"Users.getTemplate",
+			"getScenarioAndSteps",
+			"automation_db_string",
+			"querystring",
+			"attribu",
+			"Some Error Found in getting ",
+			"getClientUserEmailFromClientDb",
+			"getDataByType",
+			"saveEvents",
+			"Urlevents.setIndex",
+			"Urlevents.",
+			"Urlevents.insert",
+			"logEvents",
+			"getIncrementSequence",
+			"updateHoldingUsers",
+			"ScenarioStats.findStats",
+			"ScenarioStats.findAndModify",
+			"createMarketingFolder",
+			"updateProperty",
+			"updateUserProperty",
+			"getMarketingList",
+			"updateUserProperty",
+			"fetchAll",
+			"updateProperty",
+			"createEventCollection",
+			"MaUsers.createEditMaUser",
+			"MaUsers.makeCollection",
+			"Config.find",
+			"Config.create",
+			"Config.",
+			"fetchClientFromDnsCache",
+			"req.session.",
+			"getDbConnectionString",
+			"fetchClientFromDnsCache",
+			"insertinqueue",
+			"Log.insert",
+			"findandmodify",
+			"Log\\.insert",
+			"Log.insert",
+			"insert2",
+			"log'",
+			"redis",
+			"){\n",
+			"redis",
+			"SETNX",
+			"redis",
+			"SETNX",
+			"clientRedis",
+			"redis",
+			"Config.find",
+			"'config'",
+			"\\.count",
+			".count",
+			"count",
+			"plan",
+			"plan_type",
+			"uuid",
+			"success findandmodify 2",
+			"url ===>",
+			"load the setting file again to check for any change",
+			"no skip users found",
+			"schedule_date",
+			"send mail",
+			"write",
+			"send",
+			"sendemail",
+			"sendem",
+			"send_email"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"filesxxx",
+			"uuid",
+			"cuid",
+			"sib_cuid",
+			"cuid",
+			"uuid"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 8,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/var/www/html/forked/sib_marketing_automation/process_scripts/process_tracker.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/models/Log.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20548,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14234,
+								14234
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3723.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3118,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										176,
+										190
+									],
+									[
+										688,
+										702
+									],
+									[
+										1484,
+										1497
+									],
+									[
+										2103,
+										2111
+									],
+									[
+										2157,
+										2165
+									],
+									[
+										2618,
+										2626
+									],
+									[
+										2645,
+										2653
+									],
+									[
+										2671,
+										2679
+									],
+									[
+										2700,
+										2708
+									],
+									[
+										2765,
+										2773
+									],
+									[
+										2899,
+										2907
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1801,
+								1801
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 544.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/RuleEngine.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 96458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87073,
+								87073
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 25415.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/appFunctions.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26544,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21411,
+								21411
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/process_cookie.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9627,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/R/R.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3264.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/RabbitHandler.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6943,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 408.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/Utility.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/R/R.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 1581.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/cm.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								290,
+								290
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/helpers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10730,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8545,
+								8545
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/R/R.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4029.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/var/www/html/forked/sib_marketing_automation/cookie_matching_scripts/includes/db.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5061,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/R/R.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 51.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/var/www/html/forked/sib_marketing_automation/dnshu.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/R/R.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/var/www/html/forked/sib_marketing_automation/api/controllers/ScenariosController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 70833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								38671,
+								38671
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10380.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/var/www/html/forked/sib_marketing_automation/api/services/Utility.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57859,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36774,
+								36774
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 12168.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/var/www/html/forked/sib_marketing_automation/process_scripts/custom_modules/logcontroller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 55308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10244,
+								10244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2499.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 197.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 112.0
+	},
+	"pinned_build_system": "Packages/JSHint/JSHint.sublime-build",
+	"project": "marsplay.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"logcon",
+				"sib_marketing_automation/process_scripts/custom_modules/logcontroller.js"
+			],
+			[
+				"autom",
+				"sib_marketing_automation/assets/js/tracking_scripts/automation.js"
+			],
+			[
+				"new",
+				"sib_marketing_automation/assets/js/tracking_scripts/new_automation.js"
+			],
+			[
+				"rule",
+				"sib_marketing_automation/process_scripts/custom_modules/RuleEngine.js"
+			],
+			[
+				"log.js",
+				"sib_marketing_automation/process_scripts/custom_modules/models/Log.js"
+			],
+			[
+				"eslin",
+				"sib_marketing_automation/node_modules/.bin/eslint"
+			],
+			[
+				"mausers",
+				"sib_marketing_automation/api/models/MaUsers.js"
+			],
+			[
+				"urleve",
+				"sib_marketing_automation/api/models/Urlevents.js"
+			],
+			[
+				"utili",
+				"sib_marketing_automation/api/services/Utility.js"
+			],
+			[
+				"uti",
+				"sib_marketing_automation/api/services/Utility.js"
+			],
+			[
+				"logcont",
+				"sib_marketing_automation/api/controllers/LogController.js"
+			],
+			[
+				"user",
+				"sib_marketing_automation/api/policies/userAuthentication.js"
+			],
+			[
+				"scenariofu",
+				"sib_marketing_automation/process_scripts/custom_modules/ScenarioFunctions.js"
+			],
+			[
+				"utility",
+				"sib_marketing_automation/api/services/Utility.js"
+			],
+			[
+				"appfun",
+				"sib_marketing_automation/process_scripts/custom_modules/appFunctions.js"
+			],
+			[
+				"cm.",
+				"assets/js/tracking_scripts/cm.html"
+			],
+			[
+				"app.js",
+				"app.js"
+			],
+			[
+				"adroll",
+				"api/controllers/adrollMAController.js"
+			],
+			[
+				"logcontroll",
+				"api/controllers/LogController.js"
+			],
+			[
+				"route",
+				"config/routes.js"
+			],
+			[
+				"layou",
+				"views/layout.ejs"
+			],
+			[
+				"snipp",
+				"assets/js/tracking_scripts/snippet.js"
+			],
+			[
+				"rout",
+				"config/routes.js"
+			],
+			[
+				"hel",
+				"cookie_matching_scripts/includes/helpers.js"
+			],
+			[
+				"cm.js",
+				"cookie_matching_scripts/includes/cm.js"
+			],
+			[
+				"db.j",
+				"config/db.js"
+			],
+			[
+				"mau",
+				"api/models/MaUsers.js"
+			],
+			[
+				"log.j",
+				"api/models/Log.js"
+			],
+			[
+				"new_",
+				"assets/js/tracking_scripts/new_automation.js"
+			],
+			[
+				"cm.html",
+				"assets/js/tracking_scripts/cm.html"
+			],
+			[
+				"rou",
+				"config/routes.js"
+			],
+			[
+				"sni",
+				"assets/js/tracking_scripts/snippet.js"
+			],
+			[
+				"cm.h",
+				"assets/js/tracking_scripts/cm.html"
+			],
+			[
+				"cm.ht",
+				"assets/js/tracking_scripts/cm.html"
+			],
+			[
+				"mauser",
+				"api/models/MaUsers.js"
+			],
+			[
+				"process",
+				"process_scripts/process_events.js"
+			],
+			[
+				"sib_pl",
+				"assets/js/src/sib_plumb_wrapper.js"
+			],
+			[
+				"new_au",
+				"assets/js/tracking_scripts/new_automation.js"
+			],
+			[
+				"log",
+				"process_scripts/custom_modules/models/Log.js"
+			],
+			[
+				"logc",
+				"process_scripts/custom_modules/logcontroller.js"
+			],
+			[
+				"mause",
+				"api/models/MaUsers.js"
+			],
+			[
+				"routes",
+				"config/routes.js"
+			],
+			[
+				"app",
+				"app.js"
+			],
+			[
+				"scenariofunctions.js",
+				"process_scripts/custom_modules/ScenarioFunctions.js"
+			],
+			[
+				"assets/js/src/startpoints_actions.js",
+				"assets/js/src/startpoints_actions.js"
+			],
+			[
+				"test_c",
+				"assets/js/tracking_scripts/drop_test_cookie.html"
+			],
+			[
+				"process_tra",
+				"process_scripts/process_tracker.js"
+			],
+			[
+				"logconrto",
+				"process_scripts/custom_modules/logcontroller.js"
+			],
+			[
+				"scenar",
+				"process_scripts/custom_modules/ScenarioActions.js"
+			],
+			[
+				"automation",
+				"assets/js/tracking_scripts/automation.js"
+			],
+			[
+				"scenarioac",
+				"process_scripts/custom_modules/ScenarioActions.js"
+			],
+			[
+				"mail",
+				"custom_modules/mailin.js"
+			],
+			[
+				"rul",
+				"process_scripts/custom_modules/RuleEngine.js"
+			],
+			[
+				"scena",
+				"api/controllers/ScenariosController.js"
+			],
+			[
+				"pro",
+				"process_scripts/process_queue.js"
+			],
+			[
+				"maus",
+				"api/models/MaUsers.js"
+			],
+			[
+				"util",
+				"process_scripts/custom_modules/Utility.js"
+			],
+			[
+				"log.",
+				"process_scripts/custom_modules/models/Log.js"
+			],
+			[
+				"help",
+				"cookie_matching_scripts/includes/helpers.js"
+			],
+			[
+				"ma_",
+				"cookie_matching_scripts/ma_cookie_process.js"
+			],
+			[
+				"poli",
+				"config/policies.js"
+			],
+			[
+				"ma_cook",
+				"cookie_matching_scripts/ma_cookie_process.js"
+			],
+			[
+				"logcontr",
+				"process_scripts/custom_modules/logcontroller.js"
+			],
+			[
+				"automa",
+				"assets/js/tracking_scripts/automation.js"
+			],
+			[
+				"ma_track",
+				"process_scripts/ma_tracker_process.js"
+			],
+			[
+				"adrollma",
+				"api/controllers/adrollMAController.js"
+			],
+			[
+				"deve",
+				"cookie_matching_scripts/config/development.js"
+			],
+			[
+				"proc",
+				"process_scripts/process_queue.js"
+			],
+			[
+				"config",
+				"process_scripts/node_modules/config.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"adrollmacontroller",
+				"api/controllers/adrollMAController.js"
+			],
+			[
+				"cookie",
+				"assets/js/tracking_scripts/cookie.html"
+			],
+			[
+				"process_scripts/custom_modules/logcontroller.js",
+				"process_scripts/custom_modules/logcontroller.js"
+			],
+			[
+				"views/log/scenariologs.ejs",
+				"views/log/scenariologs.ejs"
+			],
+			[
+				"coo",
+				"assets/js/tracking_scripts/cookie.html"
+			],
+			[
+				"cm.j",
+				"cookie_matching_scripts/includes/cm.js"
+			],
+			[
+				"cooki",
+				"assets/js/tracking_scripts/cookie.html"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"snippet",
+				".tmp/public/js/tracking_scripts/snippet.js"
+			],
+			[
+				"snip",
+				"assets/js/tracking_scripts/snippet.js"
+			],
+			[
+				"proper",
+				"api/models/Properties.js"
+			],
+			[
+				"ma_tr",
+				"process_scripts/ma_tracker_process.js"
+			],
+			[
+				"proce",
+				"process_scripts/process_queue.js"
+			],
+			[
+				"scenario",
+				"process_scripts/node_modules/ScenarioActions.js"
+			],
+			[
+				"use",
+				"api/models/Users.js"
+			],
+			[
+				"def",
+				"api/controllers/DefaultController.js"
+			],
+			[
+				"app.j",
+				"app.js"
+			],
+			[
+				"mailin",
+				"node_modules/mailin.js"
+			],
+			[
+				"users",
+				"api/models/Users.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/var/www/html/forked/sib_marketing_automation/automation.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 256.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
