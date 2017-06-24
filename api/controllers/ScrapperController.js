@@ -7,6 +7,8 @@
 
 module.exports = {
 	meta: function(req,res){
+		var data =["og:title","og:url","og:image","og:description"];
+	        
 		var params = req.params.all();
 		var request = require('request').defaults({maxRedirects:10});
 		var cheerio = require('cheerio');
@@ -25,7 +27,6 @@ module.exports = {
 	        }
 	        var $ = cheerio.load(html);
 	        var json={};
-	        var data =["og:title","og:url","og:image","og:description"];
 	        for (var i=0;i<data.length;i++){
 	        	json[data[i]] = $('meta[property="'+data[i]+'"]')[0].attribs.content;
 	        }
@@ -53,6 +54,7 @@ module.exports = {
 	    });
 	},
 	search_scrapper: function(req,res){
+		// Extracting data from raw html, if they block access to direct api
 		var params = req.params.all();
 		var request = require('request').defaults({maxRedirects:10});
 		var options =  {
