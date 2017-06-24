@@ -32,12 +32,13 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  },
   '/scrapper': {
     controller: 'ScrapperController',
     action: 'meta'
+  },
+  '/':{
+    controller: 'ScrapperController',
+    action: 'search'
   }
 
   /***************************************************************************

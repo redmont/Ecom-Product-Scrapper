@@ -32,6 +32,45 @@ module.exports = {
 	        res.type('application/json');
 	        res.json(json);
 	    })
+	},
+	search:function(req,res){
+		var params = req.params.all();
+		var request = require('request').defaults({maxRedirects:10});
+		var options =  {
+		    url: "https://www.myntra.com/web/v2/search/data/"+params.q+"?f=&p="+params.page+"&rows="+params.rows,
+		    jar: request.jar(),
+		    headers: {
+		        'User-Agent': 'webscraper'
+		    }
+		};
+		request(options, function(error, response, html){
+	        if(error){
+	        	console.log(error)
+	        	return res.end();
+	        }
+	        html = JSON.parse(html)
+	        res.send(html.data.results.products)
+	    });
+	},
+	search_scrapper: function(req,res){
+		var params = req.params.all();
+		var request = require('request').defaults({maxRedirects:10});
+		var options =  {
+		    url: "https://www.myntra.com/"+params.q+"?userQuery=true",
+		    jar: request.jar(),
+		    headers: {
+		        'User-Agent': 'webscraper'
+		    }
+		};
+		request(options, function(error, response, html){
+	        if(error){
+	        	console.log(error)
+	        	return res.end();
+	        }
+	        html = "{"+html.slice(html.indexOf('"products":'))
+	        html = html.slice(0,html.indexOf('}]}')+3)
+	        res.send(JSON.parse(html))
+	    })	
 	}
 };
 
